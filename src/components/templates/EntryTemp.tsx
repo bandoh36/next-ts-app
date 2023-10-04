@@ -1,6 +1,6 @@
 import { Button } from "@/components/atoms/Button";
 const EntryTemp = () => {
-  return <Button>aaa</Button>;
+  return <Button>aaabbb</Button>;
 };
 
 export default EntryTemp;
