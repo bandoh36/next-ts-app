@@ -1,6 +1,7 @@
 import { Button as MuiButton } from "@mui/material";
-import type { ButtonProps } from "@mui/material";
 import { styled } from "@mui/system";
+
+import type { ButtonProps } from "@mui/material";
 
 export interface StyledButtonProps extends ButtonProps {
   bgColor?: "primary" | "secondary" | "white" | "disable" | string;
