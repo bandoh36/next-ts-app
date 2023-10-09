@@ -1,7 +1,7 @@
 import { ThemeProvider } from "@mui/material";
 import { AppProps } from "next/app";
 
-import { CustomTheme } from "@/styles/CustomTheme";
+import CustomTheme from "@/styles/CustomTheme";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
