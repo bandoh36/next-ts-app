@@ -6,6 +6,19 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           <link
+            rel="icon"
+            type="image/ico"
+            sizes="32x32"
+            href="/favicons/favicon-32x32.png"
+          />
+          <link rel="shortcut icon" href="/favicons/portfolioFavicon.ico" />
+          <meta name="msapplication-TileColor" content="#ffffff" />
+          <meta
+            name="msapplication-config"
+            content="/favicons/browserconfig.xml"
+          />
+          <meta name="theme-color" content="#ffffff" />
+          <link
             href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
             rel="stylesheet"
           />
