@@ -13,7 +13,7 @@ export interface StyledButtonProps extends ButtonProps {
   shadow?: "primary" | "gray" | string;
 }
 
-export const Button = styled(MuiButton, {
+const Button = styled(MuiButton, {
   shouldForwardProp: (props) =>
     [
       "bgColor",
@@ -78,3 +78,5 @@ export const Button = styled(MuiButton, {
     },
   })
 );
+
+export default Button;
