@@ -26,21 +26,18 @@ const TopTemp = () => {
         title={displayContents}
         handleDrawerOnClick={handleDrawerOnClick}
       />
+
       <Drawer
         open={open}
         handleDrawerOnClick={handleDrawerOnClick}
         setDisplayContent={setDisplayContent}
       />
-      <Box
-        sx={{
-          display: "flex",
-        }}
-      >
-        <MainContent
-          title={displayContents}
-          handleDisplayContents={handleDisplayContents}
-        />
-      </Box>
+
+      <MainContent
+        open={open}
+        title={displayContents}
+        handleDisplayContents={handleDisplayContents}
+      />
     </Box>
   );
 };

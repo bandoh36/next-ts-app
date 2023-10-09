@@ -35,7 +35,7 @@ const MainHistory = () => {
     /* 幅変化指定 上下marginの指定 */
     <Container sx={{ mt: 3, mb: 3 }}>
       {/* TODO 配置おかしい */}
-      <Container sx={{ align: "center", maxWidth: "md" }}>
+      <Container maxWidth="md">
         <Card>
           <Paper
             sx={{
@@ -58,7 +58,7 @@ const MainHistory = () => {
       <Container maxWidth="md">
         <Grid container mt={5} mb={5} spacing={2}>
           {/* 経緯部分1 */}
-          <Grid item sx={{ xs: "12", sm: "6", md: "4" }}>
+          <Grid item xs={12} sm={6} md={4}>
             <Card
               sx={{
                 height: "100%",
