@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
 import Fade from "@mui/material/Fade";
 import Typography from "@mui/material/Typography";
-import Image from "next/image";
 import { useRouter } from "next/router";
 
 import { TOP_PAGE_ANIMATION } from "@/constants";
@@ -27,15 +26,22 @@ const TopTemp = () => {
 
   return (
     <>
-      <Image
-        src={"/image/topPageBackground.jpg"}
+      <img
+        src="/image/topPageBackground.jpg"
         alt="ごめんね、背景が表示されていない（；○；）"
-        fill
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          position: "fixed",
+          top: 0,
+          left: 0,
+        }}
       />
       <Fade in={fadeIn} timeout={TOP_PAGE_ANIMATION}>
         <Box
           sx={{
-            height: "90vh",
+            height: "95vh",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
