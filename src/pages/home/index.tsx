@@ -1,7 +1,7 @@
-import TopTemp from "@/components/templates/TopTemp";
+import HomeTemp from "@/components/templates/HomeTemp";
 
 const Home = () => {
-  return <TopTemp />;
+  return <HomeTemp />;
 };
 
 export default Home;

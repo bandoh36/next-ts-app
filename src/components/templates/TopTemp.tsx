@@ -1,44 +1,55 @@
-import { useState, useCallback } from "react";
+import { useState, useEffect } from "react";
 
 import Box from "@mui/material/Box";
+import Fade from "@mui/material/Fade";
+import Typography from "@mui/material/Typography";
+import Image from "next/image";
+import { useRouter } from "next/router";
 
-import AppBar from "@/components/organisms/AppBar";
-import Drawer from "@/components/organisms/Drawer";
-import MainContent from "@/components/organisms/MainContent";
+import { TOP_PAGE_ANIMATION } from "@/constants";
+
+export interface TopPageContentProps {
+  time: number;
+}
 
 const TopTemp = () => {
-  const [open, setOpen] = useState(false);
+  const [fadeIn, setFadeIn] = useState(false);
+  const router = useRouter();
 
-  const handleDrawerOnClick = (bool: boolean) => {
-    setOpen(bool);
-  };
-
-  const [displayContents, setDisplayContent] = useState("Home");
-  const handleDisplayContents = useCallback((name: string) => {
-    setDisplayContent(name);
+  useEffect(() => {
+    // レンダリング後にフェードインを有効にする
+    setFadeIn(true);
   }, []);
 
+  setTimeout(() => {
+    router.push("/home");
+  }, TOP_PAGE_ANIMATION);
+
   return (
-    <Box sx={{ display: "flex" }}>
-      <AppBar
-        position="fixed"
-        open={open}
-        title={displayContents}
-        handleDrawerOnClick={handleDrawerOnClick}
+    <>
+      <Image
+        src={"/image/topPageBackground.jpg"}
+        alt="ごめんね、背景が表示されていない（；○；）"
+        fill
       />
-
-      <Drawer
-        open={open}
-        handleDrawerOnClick={handleDrawerOnClick}
-        setDisplayContent={setDisplayContent}
-      />
-
-      <MainContent
-        open={open}
-        title={displayContents}
-        handleDisplayContents={handleDisplayContents}
-      />
-    </Box>
+      <Fade in={fadeIn} timeout={TOP_PAGE_ANIMATION}>
+        <Box
+          sx={{
+            height: "90vh",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Typography variant="dot" sx={{ textAlign: "center" }}>
+            {"Welcome!!"}
+            <br />
+            <br />
+            {"Shunsuke Bando's Portfolio!!"}
+          </Typography>
+        </Box>
+      </Fade>
+    </>
   );
 };
 

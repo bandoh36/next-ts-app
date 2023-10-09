@@ -47,11 +47,11 @@ const CustomTheme = createTheme({
 });
 
 CustomTheme.typography.dot = {
-  color: "black",
+  color: "white",
   fontFamily: "DotGothic16, sans-serif",
-  fontSize: 30,
-  fontWeight: "bold",
-  [CustomTheme.breakpoints.up("md")]: { fontSize: 40 },
+  fontSize: 40,
+  fontWeight: 900,
+  [CustomTheme.breakpoints.up("md")]: { fontSize: 50 },
 };
 
 export default CustomTheme;
