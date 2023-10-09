@@ -34,13 +34,13 @@ const MainHistory = () => {
   return (
     /* 幅変化指定 上下marginの指定 */
     <Container sx={{ mt: 3, mb: 3 }}>
-      {/* TODO 配置おかしい */}
       <Container maxWidth="md">
         <Card>
           <Paper
             sx={{
               p: 1,
               display: "flex",
+              alignItems: "center",
               flexDirection: "column",
             }}
           >

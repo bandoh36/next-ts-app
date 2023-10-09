@@ -1,10 +1,10 @@
-import ProfileImg from "@image/profile.jpg";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/system/Box";
 
+// TODO 全体的に見直し要
 // プロフィール内容要編集
 export const ProfileContents = {
-  title: "プロフィールああaaa",
+  title: "プロフィール",
   name: "坂東 俊亮 ( Shunsuke Bando )",
   body1: "1996年3月5日生まれ   28歳   社会人5年目",
   body2: "千葉大学理学部物理学科卒業後、保険系SIerに就職。",
@@ -13,7 +13,7 @@ export const ProfileContents = {
   body5: "高校・大学ではラグビー部に所属。最近またジム通いを始めました。",
   mail: "mail：bandoh4321@gmail.com",
   github: "https://github.com/bandoh36",
-  image: ProfileImg,
+  image: "/image/profile.jpg",
   imageLabel: "Profile",
 };
 

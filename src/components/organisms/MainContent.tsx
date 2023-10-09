@@ -2,6 +2,8 @@ import Toolbar from "@mui/material/Toolbar";
 import { styled } from "@mui/material/styles";
 
 import MainHistory from "@/components/organisms/MainHistoryContent";
+import MainHome from "@/components/organisms/MainHomeContent";
+import MainSkillsetContent from "@/components/organisms/MainSkillsetContent";
 import { DRAWER_WIDTH } from "@/constants";
 
 export interface MainProps {
@@ -53,15 +55,13 @@ const MainContent = ({
     >
       <Toolbar />
       {/* Home画面表示 */}
-      {title === "Home" &&
-        // <MainHome setDisplayContents={handleDisplayContents} />
-        "aaa"}
+      {title === "Home" && (
+        <MainHome handleDisplayContents={handleDisplayContents} />
+      )}
       {/* History画面表示 */}
       {title === "History" && <MainHistory />}
       {/* Skill画面表示 */}
-      {title === "Skill" &&
-        //   <MainSkill />
-        "ccc"}
+      {title === "Skill" && <MainSkillsetContent />}
     </Main>
   );
 };
