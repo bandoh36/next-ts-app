@@ -8,7 +8,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Typography from "@mui/material/Typography";
 
-import { SkillContents } from "@/contents";
+import { SkillContents } from "@/content/content";
 
 export interface MainSkillsetContentProps {
   id: string;

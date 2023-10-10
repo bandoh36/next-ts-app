@@ -13,7 +13,7 @@ export const ProfileContents = {
   body5: "高校・大学ではラグビー部に所属。最近またジム通いを始めました。",
   mail: "mail：bandoh4321@gmail.com",
   github: "https://github.com/bandoh36",
-  image: "/image/profile.jpg",
+  image: "/image/profile/yukata.jpg",
   imageLabel: "Profile",
 };
 

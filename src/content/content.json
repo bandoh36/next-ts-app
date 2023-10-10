@@ -1,0 +1,102 @@
+{
+  "profile": {
+    "name": "坂東 俊亮 (Shunsuke Bando)",
+    "birth": "1996/03/05",
+    "mail": "bandoh4321@gmail.com",
+    "github": "https://github.com/bandoh36",
+    "image1": "/image/profile/yukata.jpg",
+    "image1Alt": "profile",
+    "image2": "/image/profile/syoumei.jpg",
+    "image2Alt": "profile2",
+    "content": [
+      { "title": "転職を考えた経緯", "path": "/history" },
+      { "title": "スキルセット", "path": "/skillset" }
+    ]
+  },
+
+  "history": {
+    "title": "",
+    "description": "",
+    "content": [
+      {
+        "title": "",
+        "description": "",
+        "modalContent": [
+          { "type": "h2", "text": "現職での業務内容" },
+          { "type": "h3", "text": "所属チームについて" }
+        ]
+      },
+      {
+        "title": "",
+        "description": "",
+        "modalContent": [
+          { "type": "h2", "text": "現職での業務内容" },
+          { "type": "h3", "text": "所属チームについて" }
+        ]
+      }
+    ]
+  },
+
+  "skillset": [
+    {
+      "id": "front",
+      "tech": "HTML",
+      "level": 2,
+      "explain": "基本的な利用方法を理解し、Webページの実装が可能。"
+    },
+    {
+      "id": "front",
+      "tech": "CSS",
+      "level": 2,
+      "explain": "基本的な利用方法を理解し、Webページの実装が可能。"
+    },
+    {
+      "id": "front",
+      "tech": "Javascript",
+      "level": 2,
+      "explain": "基本的な利用方法を理解し、動的なWebページを実装できる。"
+    },
+    {
+      "id": "front",
+      "tech": "React",
+      "level": 2,
+      "explain": "基本的な利用方法を理解し、簡易なWebページの作成に利用できる。（当サイトにて利用）"
+    },
+    {
+      "id": "front",
+      "tech": "Material UI",
+      "level": 1,
+      "explain": "基本的な利用方法を理解し、簡易なWebページの作成に利用できる。（当サイトにて利用）"
+    },
+    {
+      "id": "back",
+      "tech": "Java",
+      "level": 2,
+      "explain": "基本的な利用方法を理解し、アプリケーションを実装できる。"
+    },
+    {
+      "id": "back",
+      "tech": "SQL",
+      "level": 2,
+      "explain": "適切なSQL文の作成を実施できる。"
+    },
+    {
+      "id": "back",
+      "tech": "Linux",
+      "level": 2,
+      "explain": "シェルを通しての操作、シェルスクリプトの作成が可能。"
+    },
+    {
+      "id": "back",
+      "tech": "AWS",
+      "level": 1,
+      "explain": "基礎的な環境構築が可能。（当サイトにて利用）"
+    },
+    {
+      "id": "other",
+      "tech": "Other1",
+      "level": 3,
+      "explain": "Other1の説明"
+    }
+  ]
+}

@@ -5,7 +5,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 
-import { DRAWER_WIDTH } from "@/constants";
+import { DRAWER_WIDTH } from "@/constant/constant";
 
 export interface AppBarHeaderProps extends AppBarOwnProps {
   open?: boolean;

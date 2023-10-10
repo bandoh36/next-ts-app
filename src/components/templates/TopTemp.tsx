@@ -5,7 +5,7 @@ import Fade from "@mui/material/Fade";
 import Typography from "@mui/material/Typography";
 import { useRouter } from "next/router";
 
-import { TOP_PAGE_ANIMATION } from "@/constants";
+import { TOP_PAGE_ANIMATION } from "@/constant/constant";
 
 export interface TopPageContentProps {
   time: number;

@@ -15,7 +15,7 @@ import {
   HistoryContents1,
   HistoryContents2,
   HistoryContents3,
-} from "@/contents";
+} from "@/content/content";
 
 const historyCard = HistoryCard;
 
@@ -67,7 +67,7 @@ const MainHistory = () => {
             >
               <CardMedia
                 component="img"
-                src={"/image/historyImage1.jpg"}
+                src={"/image/history/historyImage1.jpg"}
                 alt={"historyImage1"}
               />
               <CardContent>
@@ -113,7 +113,7 @@ const MainHistory = () => {
             >
               <CardMedia
                 component="img"
-                src={"/image/historyImage2.jpg"}
+                src={"/image/history/historyImage2.jpg"}
                 alt={"historyImage2"}
               />
               <CardContent>
@@ -155,7 +155,7 @@ const MainHistory = () => {
             >
               <CardMedia
                 component="img"
-                src={"/image/historyImage3.jpg"}
+                src={"/image/history/historyImage3.jpg"}
                 alt={"historyImage3"}
               />
               <CardContent>

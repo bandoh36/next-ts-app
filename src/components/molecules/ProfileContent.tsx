@@ -8,7 +8,7 @@ import Link from "@mui/material/Link";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 
-import { ProfileContents } from "@/contents";
+import { ProfileContents } from "@/content/content";
 
 // TODO 全体的に見直し要
 const ProfileContent = () => {
