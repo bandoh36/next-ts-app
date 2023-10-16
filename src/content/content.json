@@ -15,24 +15,26 @@
   },
 
   "history": {
-    "title": "",
-    "description": "",
+    "title": "転職を考えた理由",
+    "description": "これまでの活動内容と\n転職に至るまでの経緯を説明します",
     "content": [
       {
-        "title": "",
-        "description": "",
-        "modalContent": [
-          { "type": "h2", "text": "現職での業務内容" },
-          { "type": "h3", "text": "所属チームについて" }
-        ]
+        "title": "現職での業務内容",
+        "description": "アプリケーション開発チームの一員として、保険申込・加入査定システムの開発を担当しております。",
+        "src": "/image/history/historyImage1.jpg",
+        "alt": "historyImage1"
       },
       {
-        "title": "",
-        "description": "",
-        "modalContent": [
-          { "type": "h2", "text": "現職での業務内容" },
-          { "type": "h3", "text": "所属チームについて" }
-        ]
+        "title": "転職を決意した理由",
+        "description": "日々の業務の中で、「よりスキルを身に着けることができる環境に身を置きたい」という思いが強くなり、転職を決意しました。",
+        "src": "/image/history/historyImage2.jpg",
+        "alt": "historyImage2"
+      },
+      {
+        "title": "個人での学習",
+        "description": "理想のエンジニアになるため、特に業務で使用したことのないフロントエンド領域やAWSでのインフラ環境構築を中心に学習を進めております。",
+        "src": "/image/history/historyImage3.jpg",
+        "alt": "historyImage3"
       }
     ]
   },

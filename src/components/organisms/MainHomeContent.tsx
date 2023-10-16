@@ -18,14 +18,13 @@ const MainHome = ({ handleDisplayContents }: MainHomeProps) => {
       {/* 自己紹介 */}
       <ProfileContent />
       {/* 各ページリンク */}
-      <Grid container mt={0} spacing={3}>
+      <Grid container spacing={3} sx={{ mt: 1 }}>
         <Grid item xs={12} md={6} lg={6}>
           <Paper
             sx={{
-              p: 2,
-              height: 120,
-
+              height: "120px",
               boxShadow: "6",
+              p: 2,
             }}
           >
             <Typography variant="h6" color="primary">
