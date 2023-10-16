@@ -8,11 +8,11 @@ import Link from "@mui/material/Link";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 
-import { ProfileContents } from "@/content/content";
+import ProfileContents from "@/content/content.json";
 
 // TODO 全体的に見直し要
 const ProfileContent = () => {
-  const post = ProfileContents;
+  const post = ProfileContents.profile;
 
   return (
     <Grid container spacing={5}>
@@ -21,8 +21,8 @@ const ProfileContent = () => {
           <Card>
             <CardMedia
               component="img"
-              image={post.image}
-              alt={post.imageLabel}
+              image={post.image1}
+              alt={post.image1Alt}
             />
           </Card>
         </Paper>

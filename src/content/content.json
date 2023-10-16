@@ -1,9 +1,15 @@
 {
   "profile": {
+    "title": "プロフィール",
     "name": "坂東 俊亮 (Shunsuke Bando)",
     "birth": "1996/03/05",
     "mail": "bandoh4321@gmail.com",
     "github": "https://github.com/bandoh36",
+    "body1": "1996年3月5日生まれ   28歳   社会人5年目",
+    "body2": "千葉大学理学部物理学科卒業後、保険系SIerに就職。",
+    "body3": "保険申込・加入査定システムの開発チームにて、バックエンド開発に従事。",
+    "body4": "スキルアップできる環境を目指し、転職活動中。",
+    "body5": "高校・大学ではラグビー部に所属。最近またジム通いを始めました。",
     "image1": "/image/profile/yukata.jpg",
     "image1Alt": "profile",
     "image2": "/image/profile/syoumei.jpg",
