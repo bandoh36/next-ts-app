@@ -35,7 +35,7 @@ const MainHome = ({ handleDisplayContents }: MainHomeProps) => {
                 onClick={() => handleDisplayContents("History")}
                 sx={{ mt: 3 }}
               >
-                &gt;&gt;詳しく見る！
+                &gt;&gt;詳しく見る
               </Button>
             </Typography>
           </Paper>
