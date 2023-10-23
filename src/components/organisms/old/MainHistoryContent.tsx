@@ -9,12 +9,12 @@ import Grid from "@mui/material/Grid";
 import Modal from "@mui/material/Modal";
 import Typography from "@mui/material/Typography";
 
-import HistoryHeader from "@/components/molecules/HistoryHeader";
+import HistoryHeader from "@/components/molecules/old/HistoryHeader";
 import {
   HistoryContents1,
   HistoryContents2,
   HistoryContents3,
-} from "@/components/molecules/HistoryModalContent";
+} from "@/components/molecules/old/HistoryModalContent";
 import { HistoryCard } from "@/content/content";
 import content from "@/content/content.json";
 

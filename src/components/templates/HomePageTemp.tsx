@@ -1,4 +1,5 @@
 import { useState, SyntheticEvent } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
@@ -9,15 +10,17 @@ import HomeTab from "@/components/molecules/HomeTab";
 import HomeTabs from "@/components/molecules/HomeTabs";
 
 const HomeTemp = () => {
-  const [tabValue, setTabValue] = useState(1);
+  const [tabValue, setTabValue] = useState(0);
   const tabChange = (event: SyntheticEvent, value: number) => {
     setTabValue(value);
   };
 
+  const clickTab = () => {};
+
   return (
     <Stack>
       <Grid container sx={{ width: "100%", height: "150px" }}>
-        <Grid item xs={12} sm={6}>
+        <Box sx={{ ml: 15 }}>
           <Stack
             alignItems={"center"}
             justifyContent={"center"}
@@ -27,15 +30,15 @@ const HomeTemp = () => {
               Akisute&apos;s Portfolio
             </Typography>
           </Stack>
-        </Grid>
-        <Grid item xs={0} sm={6}></Grid>
+        </Box>
+        <Box></Box>
       </Grid>
       <Stack>
         <Box
           sx={{
             display: "flex",
             width: "100%",
-            height: "75px",
+            height: "50px",
             alignItems: "flex-end",
             justifyContent: "flex-end",
             pr: "30px",
@@ -47,6 +50,22 @@ const HomeTemp = () => {
             <HomeTab label="Skillset" />
             <HomeTab label="Work" />
           </HomeTabs>
+        </Box>
+        <Box
+          sx={{
+            height: "100%",
+            mt: 3,
+            mx: 15,
+          }}
+        >
+          <Router>
+            <Routes>
+              <Route path="/profile" />
+              {/* <Route path="/history" component={History} />
+              <Route path="/skillset" component={Skillset} />
+              <Route path="/work" component={Work} /> */}
+            </Routes>
+          </Router>
         </Box>
       </Stack>
     </Stack>

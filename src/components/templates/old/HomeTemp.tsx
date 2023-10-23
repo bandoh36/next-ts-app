@@ -2,9 +2,9 @@ import { useState, useCallback } from "react";
 
 import Box from "@mui/material/Box";
 
-import AppBar from "@/components/organisms/AppBar";
-import Drawer from "@/components/organisms/Drawer";
-import MainContent from "@/components/organisms/MainContent";
+import AppBar from "@/components/organisms/old/AppBar";
+import Drawer from "@/components/organisms/old/Drawer";
+import MainContent from "@/components/organisms/old/MainContent";
 
 const HomeTemp = () => {
   const [open, setOpen] = useState(false);

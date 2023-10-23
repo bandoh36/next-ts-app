@@ -4,7 +4,7 @@ import MuiDrawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import { styled } from "@mui/material/styles";
 
-import DrawerList from "@/components/molecules/DrawerList";
+import DrawerList from "@/components/molecules/old/DrawerList";
 import { DRAWER_WIDTH } from "@/constant/constant";
 
 export interface DrawerHeaderProps {
