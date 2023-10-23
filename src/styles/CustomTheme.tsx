@@ -3,11 +3,13 @@ import { createTheme } from "@mui/material/styles";
 declare module "@mui/material/styles" {
   interface TypographyVariants {
     dot: React.CSSProperties;
+    inter: React.CSSProperties;
   }
 
   // allow configuration using `createTheme`
   interface TypographyVariantsOptions {
     dot: React.CSSProperties;
+    inter: React.CSSProperties;
   }
 
   interface BreakpointOverrides {
@@ -22,6 +24,7 @@ declare module "@mui/material/styles" {
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
     dot: true;
+    inter: true;
   }
 }
 
@@ -35,6 +38,7 @@ const CustomTheme = createTheme({
       xl: 2000,
     },
   },
+
   palette: {
     mode: "light",
     primary: {
@@ -43,7 +47,21 @@ const CustomTheme = createTheme({
       dark: "#a34449",
     },
   },
+
   spacing: [0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60],
+
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          height: "100vh",
+          background:
+            "linear-gradient(rgba(183,173,255, 0.45), rgba(255,255,255, 0))",
+          m: 0,
+        },
+      },
+    },
+  },
 });
 
 CustomTheme.typography.dot = {
@@ -52,6 +70,14 @@ CustomTheme.typography.dot = {
   fontSize: 40,
   fontWeight: 900,
   [CustomTheme.breakpoints.up("md")]: { fontSize: 50 },
+};
+
+CustomTheme.typography.inter = {
+  color: "black",
+  fontFamily: "'Inter', sans-serif",
+  fontSize: 30,
+  fontWeight: 100,
+  [CustomTheme.breakpoints.up("md")]: { fontSize: 40 },
 };
 
 export default CustomTheme;

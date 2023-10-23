@@ -22,6 +22,10 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
             rel="stylesheet"
           />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />

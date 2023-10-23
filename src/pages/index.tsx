@@ -1,7 +1,7 @@
-import TopTemp from "@/components/templates/TopTemp";
+import TopPageTemp from "@/components/templates/TopPageTemp";
 
 const Top = () => {
-  return <TopTemp />;
+  return <TopPageTemp />;
 };
 
 export default Top;
