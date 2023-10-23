@@ -22,7 +22,7 @@ const TopTemp = () => {
   }, []);
 
   setTimeout(() => {
-    router.push("/home");
+    router.push("/profile");
   }, TOP_PAGE_ANIMATION);
 
   return (

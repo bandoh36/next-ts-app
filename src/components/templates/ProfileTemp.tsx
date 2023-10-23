@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 import HomeTab from "@/components/molecules/HomeTab";
 import HomeTabs from "@/components/molecules/HomeTabs";
 
-const HomeTemp = () => {
+const ProfileTemp = () => {
   const [tabValue, setTabValue] = useState(0);
   const tabChange = (event: SyntheticEvent, value: number) => {
     setTabValue(value);
@@ -60,4 +60,4 @@ const HomeTemp = () => {
   );
 };
 
-export default HomeTemp;
+export default ProfileTemp;
