@@ -1,5 +1,3 @@
-import * as React from "react";
-
 import Tab from "@mui/material/Tab";
 import { styled } from "@mui/material/styles";
 
