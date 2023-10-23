@@ -33,6 +33,7 @@ const TopTemp = () => {
         fill
         objectFit="cover"
         style={{ position: "absolute" }}
+        unoptimized
       />
       <Fade in={fadeIn} timeout={TOP_PAGE_ANIMATION}>
         <Box

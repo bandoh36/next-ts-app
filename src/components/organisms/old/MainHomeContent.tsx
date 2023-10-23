@@ -4,7 +4,7 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 
-import ProfileContent from "@/components/molecules/ProfileContent";
+import ProfileContent from "@/components/molecules/old/ProfileContent";
 
 export interface MainHomeProps {
   handleDisplayContents: Function;

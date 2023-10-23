@@ -2,7 +2,7 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 
-import SkillsetContent from "@/components/molecules/SkillsetContent";
+import SkillsetContent from "@/components/molecules/old/SkillsetContent";
 
 const MainSkillsetContent = () => {
   return (
