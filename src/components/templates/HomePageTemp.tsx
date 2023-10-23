@@ -1,5 +1,4 @@
 import { useState, SyntheticEvent } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
@@ -14,8 +13,6 @@ const HomeTemp = () => {
   const tabChange = (event: SyntheticEvent, value: number) => {
     setTabValue(value);
   };
-
-  const clickTab = () => {};
 
   return (
     <Stack>
@@ -57,16 +54,7 @@ const HomeTemp = () => {
             mt: 3,
             mx: 15,
           }}
-        >
-          <Router>
-            <Routes>
-              <Route path="/profile" />
-              {/* <Route path="/history" component={History} />
-              <Route path="/skillset" component={Skillset} />
-              <Route path="/work" component={Work} /> */}
-            </Routes>
-          </Router>
-        </Box>
+        ></Box>
       </Stack>
     </Stack>
   );
