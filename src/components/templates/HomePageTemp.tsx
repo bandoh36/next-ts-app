@@ -1,20 +1,18 @@
-import { useState, useCallback } from "react";
+import { useState, SyntheticEvent } from "react";
 
+import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
+import HomeTab from "@/components/molecules/HomeTab";
+import HomeTabs from "@/components/molecules/HomeTabs";
+
 const HomeTemp = () => {
-  const [open, setOpen] = useState(false);
-
-  const handleDrawerOnClick = (bool: boolean) => {
-    setOpen(bool);
+  const [tabValue, setTabValue] = useState(1);
+  const tabChange = (event: SyntheticEvent, value: number) => {
+    setTabValue(value);
   };
-
-  const [displayContents, setDisplayContent] = useState("Home");
-  const handleDisplayContents = useCallback((name: string) => {
-    setDisplayContent(name);
-  }, []);
 
   return (
     <Stack>
@@ -32,7 +30,25 @@ const HomeTemp = () => {
         </Grid>
         <Grid item xs={0} sm={6}></Grid>
       </Grid>
-      <Stack>bbb</Stack>
+      <Stack>
+        <Box
+          sx={{
+            display: "flex",
+            width: "100%",
+            height: "75px",
+            alignItems: "flex-end",
+            justifyContent: "flex-end",
+            pr: "30px",
+          }}
+        >
+          <HomeTabs value={tabValue} onChange={tabChange}>
+            <HomeTab label="Profile" />
+            <HomeTab label="History" />
+            <HomeTab label="Skillset" />
+            <HomeTab label="Work" />
+          </HomeTabs>
+        </Box>
+      </Stack>
     </Stack>
   );
 };
