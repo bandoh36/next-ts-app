@@ -5,8 +5,8 @@ import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
-import HomeTab from "@/components/molecules/HomeTab";
-import HomeTabs from "@/components/molecules/HomeTabs";
+import HomeContent from "@/components/organisms/HomeContent";
+import HomeNavigationTab from "@/components/organisms/HomeNavigationTab";
 
 const HomeTemp = () => {
   const [tabValue, setTabValue] = useState(0);
@@ -41,12 +41,7 @@ const HomeTemp = () => {
             pr: "30px",
           }}
         >
-          <HomeTabs value={tabValue} onChange={tabChange}>
-            <HomeTab label="Profile" />
-            <HomeTab label="History" />
-            <HomeTab label="Skillset" />
-            <HomeTab label="Work" />
-          </HomeTabs>
+          <HomeNavigationTab tabValue={tabValue} tabChange={tabChange} />
         </Box>
         <Box
           sx={{
@@ -54,7 +49,9 @@ const HomeTemp = () => {
             mt: 3,
             mx: 15,
           }}
-        ></Box>
+        >
+          <HomeContent tabValue={tabValue} />
+        </Box>
       </Stack>
     </Stack>
   );

@@ -31,8 +31,7 @@ const TopTemp = () => {
         src="/image/topPageBackground.jpg"
         alt="topPageBackground"
         fill
-        objectFit="cover"
-        style={{ position: "absolute" }}
+        style={{ objectFit: "cover" }}
       />
       <Fade in={fadeIn} timeout={TOP_PAGE_ANIMATION}>
         <Box
