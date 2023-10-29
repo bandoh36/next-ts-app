@@ -23,7 +23,7 @@ const HomeTemp = () => {
             justifyContent={"center"}
             sx={{ height: "100%" }}
           >
-            <Typography variant="h1" typography="inter">
+            <Typography variant="h1" typography="Inter1">
               Akisute&apos;s Portfolio
             </Typography>
           </Stack>
@@ -46,7 +46,7 @@ const HomeTemp = () => {
         <Box
           sx={{
             height: "100%",
-            mt: 3,
+            mt: 10,
             mx: 15,
           }}
         >

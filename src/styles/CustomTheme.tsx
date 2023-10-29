@@ -2,14 +2,16 @@ import { createTheme } from "@mui/material/styles";
 
 declare module "@mui/material/styles" {
   interface TypographyVariants {
-    dot: React.CSSProperties;
-    inter: React.CSSProperties;
+    Dot1: React.CSSProperties;
+    Inter1: React.CSSProperties;
+    Noto1: React.CSSProperties;
   }
 
   // allow configuration using `createTheme`
   interface TypographyVariantsOptions {
-    dot: React.CSSProperties;
-    inter: React.CSSProperties;
+    Dot1: React.CSSProperties;
+    Inter1: React.CSSProperties;
+    Noto1: React.CSSProperties;
   }
 
   interface BreakpointOverrides {
@@ -23,8 +25,9 @@ declare module "@mui/material/styles" {
 // Update the Typography's variant prop options
 declare module "@mui/material/Typography" {
   interface TypographyPropsVariantOverrides {
-    dot: true;
-    inter: true;
+    Dot1: true;
+    Inter1: true;
+    Noto1: true;
   }
 }
 
@@ -64,7 +67,7 @@ const CustomTheme = createTheme({
   },
 });
 
-CustomTheme.typography.dot = {
+CustomTheme.typography.Dot1 = {
   color: "white",
   fontFamily: "DotGothic16, sans-serif",
   fontSize: 40,
@@ -72,9 +75,17 @@ CustomTheme.typography.dot = {
   [CustomTheme.breakpoints.up("md")]: { fontSize: 50 },
 };
 
-CustomTheme.typography.inter = {
+CustomTheme.typography.Inter1 = {
   color: "black",
   fontFamily: "'Inter', sans-serif",
+  fontSize: 30,
+  fontWeight: 100,
+  [CustomTheme.breakpoints.up("md")]: { fontSize: 40 },
+};
+
+CustomTheme.typography.Noto1 = {
+  color: "black",
+  fontFamily: "'Noto Sans JP', sans-serif",
   fontSize: 30,
   fontWeight: 100,
   [CustomTheme.breakpoints.up("md")]: { fontSize: 40 },

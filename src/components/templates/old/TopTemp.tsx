@@ -47,7 +47,7 @@ const TopTemp = () => {
             justifyContent: "center",
           }}
         >
-          <Typography variant="dot" sx={{ textAlign: "center" }}>
+          <Typography variant="Dot1" sx={{ textAlign: "center" }}>
             {"Welcome!!"}
             <br />
             <br />
