@@ -5,6 +5,8 @@ declare module "@mui/material/styles" {
     Dot1: React.CSSProperties;
     Inter1: React.CSSProperties;
     Noto1: React.CSSProperties;
+    Noto2: React.CSSProperties;
+    Noto3: React.CSSProperties;
   }
 
   // allow configuration using `createTheme`
@@ -12,6 +14,8 @@ declare module "@mui/material/styles" {
     Dot1: React.CSSProperties;
     Inter1: React.CSSProperties;
     Noto1: React.CSSProperties;
+    Noto2: React.CSSProperties;
+    Noto3: React.CSSProperties;
   }
 
   interface BreakpointOverrides {
@@ -28,6 +32,8 @@ declare module "@mui/material/Typography" {
     Dot1: true;
     Inter1: true;
     Noto1: true;
+    Noto2: true;
+    Noto3: true;
   }
 }
 
@@ -80,15 +86,34 @@ CustomTheme.typography.Inter1 = {
   fontFamily: "'Inter', sans-serif",
   fontSize: 30,
   fontWeight: 100,
-  [CustomTheme.breakpoints.up("md")]: { fontSize: 40 },
+  [CustomTheme.breakpoints.up("md")]: { fontSize: 50 },
 };
 
 CustomTheme.typography.Noto1 = {
   color: "black",
   fontFamily: "'Noto Sans JP', sans-serif",
-  fontSize: 30,
+  fontSize: 45,
   fontWeight: 100,
-  [CustomTheme.breakpoints.up("md")]: { fontSize: 40 },
+  lineHeight: 2,
+  [CustomTheme.breakpoints.up("md")]: { fontSize: 30 },
+};
+
+CustomTheme.typography.Noto2 = {
+  color: "black",
+  fontFamily: "'Noto Sans JP', sans-serif",
+  fontSize: 15,
+  fontWeight: 100,
+  lineHeight: "30px",
+  [CustomTheme.breakpoints.up("md")]: { fontSize: 17 },
+};
+
+CustomTheme.typography.Noto3 = {
+  color: "black",
+
+  fontFamily: "'Noto Sans JP', sans-serif",
+  fontSize: 12,
+  fontWeight: 100,
+  [CustomTheme.breakpoints.up("md")]: { fontSize: 15 },
 };
 
 export default CustomTheme;
