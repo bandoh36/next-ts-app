@@ -1,3 +1,6 @@
+import Typography from "@mui/material/Typography";
+
+import { HistoryCardProps } from "@/components/molecules/HistoryCardLeftImage";
 import { StartDate } from "@/lib/common/getYears";
 
 // ヘッダーボタン押下時のウィンドウ変更幅
@@ -18,4 +21,14 @@ export const WORKING_STARTDATE: StartDate = {
   year: 2019,
   month: 4,
   date: 1,
+};
+
+export const HISTORY_CARD_CONTENT_SIER: HistoryCardProps = {
+  image: { src: "/image/history/historyImage1.jpg", alt: "history1" },
+  description: (
+    <>
+      <Typography typography="Noto1">保険系SIerでの経験</Typography>
+      <Typography typography="Noto2">フロントエンド開発</Typography>
+    </>
+  ),
 };
