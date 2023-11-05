@@ -1,5 +1,6 @@
 import * as React from "react";
 
+import Box from "@mui/material/Box";
 import Rating from "@mui/material/Rating";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -8,32 +9,39 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Typography from "@mui/material/Typography";
 
-import { SkillContents } from "@/content/content";
+import { SKILLSET_CONTENT } from "@/constant/constant";
 
 export interface MainSkillsetContentProps {
   id: string;
 }
 
-const contents = SkillContents;
+const skillsetContent = SKILLSET_CONTENT;
 
 const getSkillContents = (type: string) => {
   const resultContents = [];
-  for (let i = 0; i < contents.length; i++) {
-    contents[i].id === type && resultContents.push(contents[i]);
+  for (let i = 0; i < skillsetContent.length; i++) {
+    skillsetContent[i].id === type && resultContents.push(skillsetContent[i]);
   }
   return resultContents;
 };
 
-// TODO 全体的に見直し要
 const SkillsetList = ({ id }: MainSkillsetContentProps) => {
   return (
-    <>
+    <Box
+      sx={{
+        backgroundColor: "white",
+        borderRadius: "10px",
+        boxShadow: "6",
+        m: 6,
+        p: 6,
+      }}
+    >
       <Typography variant="h6" color="primary">
         {id === "front" && "フロントエンド"}
         {id === "back" && "バックエンド"}
         {id === "other" && "その他"}
       </Typography>
-      <Table sx={{ minWidth: "700" }}>
+      <Table>
         <TableHead>
           <TableRow>
             <TableCell width="15%">技術要素</TableCell>
@@ -53,7 +61,7 @@ const SkillsetList = ({ id }: MainSkillsetContentProps) => {
           ))}
         </TableBody>
       </Table>
-    </>
+    </Box>
   );
 };
 
