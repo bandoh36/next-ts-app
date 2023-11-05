@@ -2,6 +2,7 @@ import { Link as MuiLink } from "@mui/material";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
+import Image from "next/image";
 
 import { BIRTHDAY, WORKING_STARTDATE } from "@/constant/constant";
 import { getYears } from "@/lib/common/getYears";
@@ -17,17 +18,14 @@ const HomeProfile = () => {
             borderRadius: "10px",
             overflow: "hidden",
             position: "relative",
-
-            // TODO 消す
-            backgroundColor: "blue",
           }}
         >
-          {/* <Image
+          <Image
             src="/image/profile/tsuri.jpg"
             alt="fishing"
             fill
             style={{ objectFit: "cover" }}
-          /> */}
+          />
         </Box>
       </Grid>
       <Grid item>
