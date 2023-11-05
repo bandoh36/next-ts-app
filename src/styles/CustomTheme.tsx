@@ -103,7 +103,7 @@ CustomTheme.typography.Noto2 = {
   fontFamily: "'Noto Sans JP', sans-serif",
   fontSize: 15,
   fontWeight: 100,
-  lineHeight: "30px",
+  lineHeight: "27px",
   [CustomTheme.breakpoints.up("md")]: { fontSize: 17 },
 };
 
@@ -113,6 +113,7 @@ CustomTheme.typography.Noto3 = {
   fontFamily: "'Noto Sans JP', sans-serif",
   fontSize: 12,
   fontWeight: 100,
+  lineHeight: "25px",
   [CustomTheme.breakpoints.up("md")]: { fontSize: 15 },
 };
 

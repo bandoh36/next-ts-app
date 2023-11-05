@@ -45,7 +45,6 @@ const HomeTemp = () => {
         </Box>
         <Box
           sx={{
-            height: "100%",
             mt: 10,
             mx: 15,
           }}
