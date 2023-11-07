@@ -1,83 +1,68 @@
 import { Link as MuiLink } from "@mui/material";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
+import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
 
-import { BIRTHDAY, WORKING_STARTDATE } from "@/constant/profileConstant";
-import { getYears } from "@/lib/common/getYears";
+import { PROFILE_CONTENT } from "@/constant/profileConstant";
 
 const HomeProfile = () => {
+  const profileContent = PROFILE_CONTENT;
   return (
-    <Grid container justifyContent="space-around" alignItems="center">
-      <Grid item>
-        <Box
-          sx={{
-            width: "700px",
-            height: "500px",
-            borderRadius: "10px",
-            overflow: "hidden",
-            position: "relative",
-          }}
-        >
-          <Image
-            src="/image/profile/tsuri.jpg"
-            alt="fishing"
-            fill
-            style={{ objectFit: "cover" }}
-          />
-        </Box>
-      </Grid>
-      <Grid item>
-        <Box
-          sx={{
-            width: "800px",
-            height: "450px",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-between",
-            border: 1,
-            borderRadius: "15px",
-            p: 7,
-          }}
-        >
-          <Box>
-            <Typography typography="Noto1">Akisute（あきすて）</Typography>
-            <Typography typography="Noto2">
-              {getYears(BIRTHDAY, "birthday")}歳、社会人
-              {getYears(WORKING_STARTDATE, "work")}年目
-            </Typography>
-            <Typography typography="Noto2">
-              2019年保険系SIerに就職。
-              <br />
-              保険申込／査定Webアプリケーションチームの一員として、
-              <br />
-              Javascriptでのフロントエンド開発やJavaでのバックエンド開発、PL業務を経験。
-              <br />
-              「よりスキルを身に着けることができる環境に身を置きたい」という思いから、
-              <br />
-              2023年Web系ベンチャー企業へ転職。
-              <br />
-              現在はフロントエンド開発を担当しており、日々精進中。。
-            </Typography>
+    <Stack>
+      <Grid container alignItems="center" spacing={10} sx={{}}>
+        <Grid item>
+          <Box
+            sx={{
+              width: { xs: "100%", md: "600px" },
+              height: "400px",
+              borderRadius: "10px",
+              boxShadow: "10",
+              overflow: "hidden",
+              position: "relative",
+            }}
+          >
+            <Image
+              src={profileContent.image.src}
+              alt={profileContent.image.alt}
+              fill
+              style={{ objectFit: "cover" }}
+            />
           </Box>
-          <Box>
-            <Typography typography="Noto3">
-              mail :　
-              <MuiLink target="_blank" href="mailto:bandoh4321@gmail.com">
-                bandoh4321@gmail.com
-              </MuiLink>
-            </Typography>
-            <Typography typography="Noto3">
-              github :　
-              <MuiLink target="_blank" href="https://github.com/bandoh36">
-                https://github.com/bandoh36
-              </MuiLink>
-            </Typography>
+        </Grid>
+        <Grid item>
+          <Box
+            sx={{
+              width: "800px",
+              height: "450px",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+              border: 1,
+              borderRadius: "15px",
+              p: 7,
+            }}
+          >
+            <Box>{profileContent.profile}</Box>
+            <Box>
+              <Typography typography="Noto3">
+                mail :　
+                <MuiLink target="_blank" href="mailto:bandoh4321@gmail.com">
+                  bandoh4321@gmail.com
+                </MuiLink>
+              </Typography>
+              <Typography typography="Noto3">
+                github :　
+                <MuiLink target="_blank" href="https://github.com/bandoh36">
+                  https://github.com/bandoh36
+                </MuiLink>
+              </Typography>
+            </Box>
           </Box>
-        </Box>
+        </Grid>
       </Grid>
-    </Grid>
+    </Stack>
   );
 };
 

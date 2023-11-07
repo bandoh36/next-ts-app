@@ -13,7 +13,7 @@ const HomeTab = styled((props: HomeTabProps) => (
 
   // TODO テーマ設定、SP対応
   fontWeight: theme.typography.fontWeightRegular,
-  fontSize: theme.typography.pxToRem(15),
+  fontSize: theme.typography.pxToRem(14),
   // marginRight: theme.spacing(1),
   color: "black",
   "&.Mui-selected": {
