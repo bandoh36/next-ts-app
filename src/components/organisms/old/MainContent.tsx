@@ -4,7 +4,7 @@ import { styled } from "@mui/material/styles";
 import MainHistory from "@/components/organisms/old/MainHistoryContent";
 import MainHome from "@/components/organisms/old/MainHomeContent";
 import MainSkillsetContent from "@/components/organisms/old/MainSkillsetContent";
-import { DRAWER_WIDTH } from "@/constant/constant";
+import { DRAWER_WIDTH } from "@/constant/historyConstant";
 
 export interface MainProps {
   open?: boolean;

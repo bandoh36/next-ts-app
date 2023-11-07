@@ -4,7 +4,7 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
 
-import { BIRTHDAY, WORKING_STARTDATE } from "@/constant/constant";
+import { BIRTHDAY, WORKING_STARTDATE } from "@/constant/profileConstant";
 import { getYears } from "@/lib/common/getYears";
 
 const HomeProfile = () => {

@@ -5,7 +5,7 @@ import IconButton from "@mui/material/IconButton";
 import { styled } from "@mui/material/styles";
 
 import DrawerList from "@/components/molecules/old/DrawerList";
-import { DRAWER_WIDTH } from "@/constant/constant";
+import { DRAWER_WIDTH } from "@/constant/historyConstant";
 
 export interface DrawerHeaderProps {
   variant?: string;
