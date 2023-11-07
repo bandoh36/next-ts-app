@@ -35,7 +35,7 @@ const WorkCard = ({ content }: WorkCardProps) => {
       sx={{
         backgroundColor: "white",
         borderRadius: "10px",
-        p: 5,
+        p: 8,
         mb: 10,
       }}
     >
