@@ -6,7 +6,7 @@ import HistoryCardRightImage from "@/components/molecules/HistoryCardRightImage"
 import {
   HISTORY_CARD_CONTENT_SIER,
   HISTORY_CARD_CONTENT_VENTURE,
-} from "@/constant/constant";
+} from "@/constant/historyConstant";
 
 const HomeHistory = () => {
   const historyCardContentSIer = HISTORY_CARD_CONTENT_SIER;

@@ -57,7 +57,7 @@ const Button = styled(MuiButton, {
       ...(rounded === "circle"
         ? { borderRadius: "100vw" }
         : rounded === "rounded"
-        ? { borderRadius: "5px" }
+        ? { borderRadius: "10px" }
         : { borderRadius: rounded }),
       ...(shadow === "primary"
         ? {

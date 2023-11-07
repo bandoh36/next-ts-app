@@ -9,7 +9,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Typography from "@mui/material/Typography";
 
-import { SKILLSET_CONTENT } from "@/constant/constant";
+import { SKILLSET_CONTENT } from "@/constant/skillsetConstant";
 
 export interface MainSkillsetContentProps {
   id: string;
@@ -37,6 +37,7 @@ const SkillsetList = ({ id }: MainSkillsetContentProps) => {
       }}
     >
       <Typography variant="h6" color="primary">
+        {id === "qualification" && "資格"}
         {id === "front" && "フロントエンド"}
         {id === "back" && "バックエンド"}
         {id === "other" && "その他"}
