@@ -4,25 +4,26 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
 
-import { BIRTHDAY, WORKING_STARTDATE } from "@/constant/profileConstant";
-import { getYears } from "@/lib/common/getYears";
+import { PROFILE_CONTENT } from "@/constant/profileConstant";
 
 const HomeProfile = () => {
+  const profileContent = PROFILE_CONTENT;
   return (
-    <Grid container justifyContent="space-around" alignItems="center">
+    <Grid container alignItems="center" spacing={10} sx={{}}>
       <Grid item>
         <Box
           sx={{
-            width: "700px",
-            height: "500px",
+            width: { xs: "100%", md: "600px" },
+            height: "400px",
             borderRadius: "10px",
+            boxShadow: "10",
             overflow: "hidden",
             position: "relative",
           }}
         >
           <Image
-            src="/image/profile/tsuri.jpg"
-            alt="fishing"
+            src={profileContent.image.src}
+            alt={profileContent.image.alt}
             fill
             style={{ objectFit: "cover" }}
           />
@@ -41,26 +42,7 @@ const HomeProfile = () => {
             p: 7,
           }}
         >
-          <Box>
-            <Typography typography="Noto1">Akisute（あきすて）</Typography>
-            <Typography typography="Noto2">
-              {getYears(BIRTHDAY, "birthday")}歳、社会人
-              {getYears(WORKING_STARTDATE, "work")}年目
-            </Typography>
-            <Typography typography="Noto2">
-              2019年保険系SIerに就職。
-              <br />
-              保険申込／査定Webアプリケーションチームの一員として、
-              <br />
-              Javascriptでのフロントエンド開発やJavaでのバックエンド開発、PL業務を経験。
-              <br />
-              「よりスキルを身に着けることができる環境に身を置きたい」という思いから、
-              <br />
-              2023年Web系ベンチャー企業へ転職。
-              <br />
-              現在はフロントエンド開発を担当しており、日々精進中。。
-            </Typography>
-          </Box>
+          <Box>{profileContent.profile}</Box>
           <Box>
             <Typography typography="Noto3">
               mail :　

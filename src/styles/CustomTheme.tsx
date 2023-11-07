@@ -64,8 +64,10 @@ const CustomTheme = createTheme({
       styleOverrides: {
         body: {
           height: "100vh",
+          position: "relative",
           background:
-            "linear-gradient(rgba(183,173,255, 0.45), rgba(255,255,255, 0))",
+            "linear-gradient(135deg, rgba(140,130,255, 0.45), rgba(255,255,255, 0))",
+          backgroundAttachment: "fixed",
           m: 0,
         },
       },
@@ -92,7 +94,7 @@ CustomTheme.typography.Inter1 = {
 CustomTheme.typography.Noto1 = {
   color: "black",
   fontFamily: "'Noto Sans JP', sans-serif",
-  fontSize: 45,
+  fontSize: 20,
   fontWeight: 100,
   lineHeight: 2,
   [CustomTheme.breakpoints.up("md")]: { fontSize: 30 },
@@ -101,7 +103,7 @@ CustomTheme.typography.Noto1 = {
 CustomTheme.typography.Noto2 = {
   color: "black",
   fontFamily: "'Noto Sans JP', sans-serif",
-  fontSize: 15,
+  fontSize: 14,
   fontWeight: 100,
   lineHeight: "27px",
   [CustomTheme.breakpoints.up("md")]: { fontSize: 17 },

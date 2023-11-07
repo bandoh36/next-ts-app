@@ -11,7 +11,7 @@ const HomeWork = () => {
   const workContentBlog = WORK_CONTENT_BLOG;
 
   return (
-    <Grid container justifyContent="center" sx={{ pb: 4 }}>
+    <Grid container justifyContent="center">
       <WorkCard content={workContentPortfolio} />
       <WorkCard content={workContentBlog} />
     </Grid>
