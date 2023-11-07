@@ -14,11 +14,11 @@ const HomeTemp = () => {
   };
 
   return (
-    <Grid container>
+    <Grid container justifyContent="center" sx={{ pb: 15 }}>
       <Box
         sx={{
           width: "100%",
-          height: { xs: "65px", md: "150px" },
+          height: { xs: "65px", md: "100px" },
           display: "flex",
           justifyContent: { xs: "center", md: "flex-start" },
           mt: { xs: 10, md: 15 },
@@ -38,6 +38,7 @@ const HomeTemp = () => {
           alignItems: { xs: "center", md: "flex-end" },
           justifyContent: { xs: "center", md: "flex-end" },
           pr: { sx: 0, md: "30px" },
+          mb: { sx: 2, md: 5 },
         }}
       >
         <HomeNavigationTab tabValue={tabValue} tabChange={tabChange} />
