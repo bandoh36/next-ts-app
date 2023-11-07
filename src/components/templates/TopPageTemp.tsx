@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
-import { TOP_PAGE_ANIMATION } from "@/constant/historyConstant";
+import { TOP_PAGE_ANIMATION } from "@/constant/common/constant";
 
 export interface TopPageContentProps {
   time: number;
