@@ -7,7 +7,7 @@ export const HISTORY_CARD_CONTENT_SIER: HistoryCardProps = {
   description: (
     <>
       <Typography typography="Noto1">
-        保険系SIerにて上流～下流開発を経験
+        保険系SIerで上流～下流行程を経験
       </Typography>
       <Typography typography="Noto3" sx={{ p: 3 }}>
         新卒で入社した保険系SIerではウォーターフォールでの開発案件に参画し、
