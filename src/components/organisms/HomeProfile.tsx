@@ -11,7 +11,7 @@ const HomeProfile = () => {
     <Box
       alignItems={"center"}
       sx={{
-        width: { xs: "100vw", md: "1300px" },
+        width: { xs: "95vw", md: "1300px" },
         display: "flex",
         flexDirection: { xs: "column", md: "row" },
       }}

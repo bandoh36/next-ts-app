@@ -15,7 +15,7 @@ const HomeHistory = () => {
     <Box
       alignItems={"center"}
       sx={{
-        width: { xs: "100vw", md: "1100px" },
+        width: { xs: "95vw", md: "1100px" },
       }}
     >
       <Box sx={{ mt: 0 }}>

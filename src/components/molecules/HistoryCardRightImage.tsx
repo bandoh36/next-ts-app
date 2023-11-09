@@ -9,11 +9,12 @@ const HistoryCardRightImage = ({ image, description }: HistoryCardProps) => {
   return (
     <Box
       sx={{
-        width: { xs: "100vw", md: "1100px" },
+        width: { xs: "100%", md: "1100px" },
         height: { xs: "500px", md: "300px" },
         display: "flex",
         flexDirection: { xs: "column", md: "row" },
         justifyContent: "flex-start",
+        overflow: "hidden",
         borderRadius: "10px",
         backgroundColor: "white",
         boxShadow: "3",
