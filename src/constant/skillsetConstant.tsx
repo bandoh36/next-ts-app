@@ -43,7 +43,13 @@ export const SKILLSET_CONTENT = [
   },
   {
     id: "front",
-    tech: "Javascript/Typescript",
+    tech: "Javascript",
+    level: 3,
+    explain: "基本的な利用方法に加え応用が可能で、他者へ教えることができる。",
+  },
+  {
+    id: "front",
+    tech: "Typescript",
     level: 3,
     explain: "基本的な利用方法に加え応用が可能で、他者へ教えることができる。",
   },

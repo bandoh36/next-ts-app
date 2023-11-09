@@ -29,15 +29,18 @@ const SkillsetList = ({ id }: MainSkillsetContentProps) => {
   return (
     <Box
       sx={{
+        width: { xs: "95vw", md: "1100px" },
+        maxWidth: { xs: "1200px" },
         backgroundColor: "white",
         borderRadius: "10px",
         boxShadow: "3",
+        p: 6,
         mb: 6,
         mx: { xs: 0, md: 6 },
-        p: 6,
+        overflow:"auto"
       }}
     >
-      <Box sx={{ minWidth: "300px" }}>
+      <Box>
         <Typography typography="h6" color="primary">
           {id === "qualification" && "資格"}
           {id === "front" && "フロントエンド"}

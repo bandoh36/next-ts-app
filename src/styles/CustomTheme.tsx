@@ -64,7 +64,6 @@ const CustomTheme = createTheme({
       styleOverrides: {
         body: {
           height: "100vh",
-          position: "relative",
           background:
             "linear-gradient(135deg, rgba(140,130,255, 0.45), rgba(255,255,255, 0))",
           backgroundAttachment: "fixed",

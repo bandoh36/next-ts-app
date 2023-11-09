@@ -29,7 +29,6 @@ const HomeTemp = () => {
           Akisute&apos;s Portfolio
         </Typography>
       </Box>
-
       <Box
         sx={{
           display: "flex",
