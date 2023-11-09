@@ -31,37 +31,61 @@ const SkillsetList = ({ id }: MainSkillsetContentProps) => {
       sx={{
         backgroundColor: "white",
         borderRadius: "10px",
-        boxShadow: "6",
-        m: 6,
+        boxShadow: "3",
+        mb: 6,
+        mx: { xs: 0, md: 6 },
         p: 6,
       }}
     >
-      <Typography variant="h6" color="primary">
-        {id === "qualification" && "資格"}
-        {id === "front" && "フロントエンド"}
-        {id === "back" && "バックエンド"}
-        {id === "other" && "その他"}
-      </Typography>
-      <Table>
-        <TableHead>
-          <TableRow>
-            <TableCell width="15%">技術要素</TableCell>
-            <TableCell width="15%">レベル</TableCell>
-            <TableCell width="70%">説明</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {getSkillContents(id).map((row) => (
-            <TableRow key={row.id}>
-              <TableCell>{row.tech}</TableCell>
-              <TableCell>
-                <Rating defaultValue={row.level} max={3} readOnly />
-              </TableCell>
-              <TableCell>{row.explain}</TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
+      <Box sx={{ minWidth: "300px" }}>
+        <Typography typography="h6" color="primary">
+          {id === "qualification" && "資格"}
+          {id === "front" && "フロントエンド"}
+          {id === "back" && "バックエンド"}
+          {id === "other" && "その他"}
+        </Typography>
+        <Table>
+          <TableHead>
+            {id === "qualification" && "資格" ? (
+              <TableRow>
+                <TableCell width="50%"></TableCell>
+                <TableCell width="50%"></TableCell>
+              </TableRow>
+            ) : (
+              <TableRow>
+                <TableCell width="15%">
+                  <Typography typography="Noto2">技術要素</Typography>
+                </TableCell>
+                <TableCell width="15%">
+                  <Typography typography="Noto2">レべル</Typography>
+                </TableCell>
+                <TableCell width="70%">
+                  <Typography typography="Noto2">説明</Typography>
+                </TableCell>
+              </TableRow>
+            )}
+          </TableHead>
+          <TableBody>
+            {getSkillContents(id).map((row) => (
+              <TableRow key={row.id}>
+                <TableCell>
+                  <Typography typography="Noto3">{row.tech}</Typography>
+                </TableCell>
+                {id === "qualification" && "資格" ? (
+                  <></>
+                ) : (
+                  <TableCell>
+                    <Rating defaultValue={row.level} max={3} readOnly />
+                  </TableCell>
+                )}
+                <TableCell>
+                  <Typography typography="Noto3">{row.explain}</Typography>
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </Box>
     </Box>
   );
 };

@@ -103,20 +103,19 @@ CustomTheme.typography.Noto1 = {
 CustomTheme.typography.Noto2 = {
   color: "black",
   fontFamily: "'Noto Sans JP', sans-serif",
-  fontSize: 14,
+  fontSize: 12,
   fontWeight: 100,
-  lineHeight: "27px",
-  [CustomTheme.breakpoints.up("md")]: { fontSize: 17 },
+  lineHeight: "20px",
+  [CustomTheme.breakpoints.up("md")]: { fontSize: 15, lineHeight: "27px" },
 };
 
 CustomTheme.typography.Noto3 = {
   color: "black",
-
   fontFamily: "'Noto Sans JP', sans-serif",
-  fontSize: 12,
+  fontSize: 11,
   fontWeight: 100,
-  lineHeight: "25px",
-  [CustomTheme.breakpoints.up("md")]: { fontSize: 15 },
+  lineHeight: "20px",
+  [CustomTheme.breakpoints.up("md")]: { fontSize: 13, lineHeight: "25px" },
 };
 
 export default CustomTheme;

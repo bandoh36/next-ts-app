@@ -1,4 +1,4 @@
-import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
 
 import WorkCard from "@/components/molecules/WorkCard";
 import {
@@ -11,10 +11,15 @@ const HomeWork = () => {
   const workContentBlog = WORK_CONTENT_BLOG;
 
   return (
-    <Grid container justifyContent="center">
+    <Box
+      alignItems={"center"}
+      sx={{
+        width: { xs: "100vw", md: "1100px" },
+      }}
+    >
       <WorkCard content={workContentPortfolio} />
       <WorkCard content={workContentBlog} />
-    </Grid>
+    </Box>
   );
 };
 

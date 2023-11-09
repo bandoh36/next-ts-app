@@ -29,7 +29,7 @@ export const PROFILE_CONTENT = {
       <Typography typography="Noto2">
         2019年保険系SIerに就職。
         <br />
-        保険申込／査定Webアプリケーションチームの一員として、
+        保険申込／査定Webアプリ開発チームの一員として、
         <br />
         Javascriptでのフロントエンド開発やJavaでのバックエンド開発、PL業務を経験。
         <br />
