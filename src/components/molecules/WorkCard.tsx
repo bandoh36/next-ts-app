@@ -35,6 +35,7 @@ const WorkCard = ({ content }: WorkCardProps) => {
       sx={{
         backgroundColor: "white",
         borderRadius: "10px",
+        boxShadow: "3",
         p: 8,
         mb: 10,
       }}
@@ -46,11 +47,11 @@ const WorkCard = ({ content }: WorkCardProps) => {
       >
         <Typography typography="Noto1">{content.title}</Typography>
       </Box>
-      <Stack direction="row">
+      <Stack sx={{ flexDirection: { xs: "column", md: "row" } }}>
         <Box
           sx={{
-            width: "450px",
-            height: "320px",
+            width: "100%",
+            height: { xs: "200px", md: "320px" },
             borderRadius: "10px",
             overflow: "hidden",
             position: "relative",
@@ -66,11 +67,12 @@ const WorkCard = ({ content }: WorkCardProps) => {
         </Box>
         <Box
           sx={{
-            width: "600px",
+            width: "100%",
             height: "300px",
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
+            mt: 5,
           }}
         >
           {content.description}
@@ -103,7 +105,7 @@ const WorkCard = ({ content }: WorkCardProps) => {
             >
               <Box
                 sx={{
-                  p: 5,
+                  p: 3,
                 }}
               >
                 <Typography
@@ -114,41 +116,41 @@ const WorkCard = ({ content }: WorkCardProps) => {
                   システム構成
                 </Typography>
                 <Typography
-                  sx={{ m: 2 }}
+                  sx={{ mt: 3, ml: 2 }}
                   variant="subtitle1"
                   color="primary"
                   fontSize={17}
                 >
                   フロントエンド
                 </Typography>
-                <Typography sx={{ m: 2 }} variant="body2" fontSize={13}>
+                <Typography sx={{ mt: 1, ml: 3 }} variant="body2" fontSize={13}>
                   {content.modalDescription.front}
                 </Typography>
                 <Typography
-                  sx={{ m: 2 }}
+                  sx={{ mt: 3, ml: 2 }}
                   variant="subtitle1"
                   color="primary"
                   fontSize={17}
                 >
                   バックエンド
                 </Typography>
-                <Typography sx={{ m: 2 }} variant="body2" fontSize={13}>
+                <Typography sx={{ mt: 1, ml: 3 }} variant="body2" fontSize={13}>
                   {content.modalDescription.back}
                 </Typography>
                 <Typography
-                  sx={{ m: 2 }}
+                  sx={{ mt: 3, ml: 2 }}
                   variant="subtitle1"
                   color="primary"
                   fontSize={17}
                 >
                   インフラ
                 </Typography>
-                <Typography sx={{ m: 2 }} variant="body2" fontSize={13}>
+                <Typography sx={{ mt: 1, ml: 3 }} variant="body2" fontSize={13}>
                   {content.modalDescription.infra}
                 </Typography>
 
                 <Typography
-                  sx={{ m: 2 }}
+                  sx={{ mt: 3, ml: 2 }}
                   variant="subtitle1"
                   color="primary"
                   fontSize={17}
@@ -156,7 +158,11 @@ const WorkCard = ({ content }: WorkCardProps) => {
                   ソースコード
                 </Typography>
                 {content.modalDescription.source.src ? (
-                  <Typography sx={{ m: 2 }} variant="body2" fontSize={13}>
+                  <Typography
+                    sx={{ mt: 1, ml: 3 }}
+                    variant="body2"
+                    fontSize={13}
+                  >
                     <Link
                       target="_blank"
                       href={content.modalDescription.source.src}
@@ -165,12 +171,16 @@ const WorkCard = ({ content }: WorkCardProps) => {
                     </Link>
                   </Typography>
                 ) : (
-                  <Typography sx={{ m: 2 }} variant="body2" fontSize={13}>
+                  <Typography
+                    sx={{ mt: 1, ml: 3 }}
+                    variant="body2"
+                    fontSize={13}
+                  >
                     {content.modalDescription.source.text}
                   </Typography>
                 )}
                 <Typography
-                  sx={{ m: 2 }}
+                  sx={{ mt: 5, ml: 2 }}
                   variant="subtitle1"
                   color="primary"
                   fontSize={17}

@@ -1,5 +1,4 @@
 import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
 
 import HistoryCardLeftImage from "@/components/molecules/HistoryCardLeftImage";
 import HistoryCardRightImage from "@/components/molecules/HistoryCardRightImage";
@@ -13,14 +12,19 @@ const HomeHistory = () => {
   const historyCardContentVenture = HISTORY_CARD_CONTENT_VENTURE;
 
   return (
-    <Grid container justifyContent="center">
+    <Box
+      alignItems={"center"}
+      sx={{
+        width: { xs: "100vw", md: "1100px" },
+      }}
+    >
       <Box sx={{ mt: 0 }}>
         <HistoryCardLeftImage {...historyCardContentSIer} />
       </Box>
       <Box sx={{ mt: 15 }}>
         <HistoryCardRightImage {...historyCardContentVenture} />
       </Box>
-    </Grid>
+    </Box>
   );
 };
 

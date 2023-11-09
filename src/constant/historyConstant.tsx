@@ -11,15 +11,12 @@ export const HISTORY_CARD_CONTENT_SIER: HistoryCardProps = {
       </Typography>
       <Typography typography="Noto3" sx={{ p: 3 }}>
         新卒で入社した保険系SIerではウォーターフォールでの開発案件に参画し、
-        <br />
         Javaでのプログラム実装だけでなく、要件定義～運用保守フェーズまで幅広く担当。
         <br />
+        <br />
         入社3年目には保守開発プロジェクトのリーダーとして、
-        <br />
         案件管理（スケジュール作成／進捗管理）やメンバーのマネジメントも経験。
-        <br />
         また独学・社外の研修を通して、Javascriptを用いたフロントエンド開発や
-        <br />
         AWSを用いたインフラ環境構築について日々自己学習に取り組む。
       </Typography>
     </>
@@ -33,15 +30,11 @@ export const HISTORY_CARD_CONTENT_VENTURE: HistoryCardProps = {
       <Typography typography="Noto1">Web系ベンチャー企業へ転職</Typography>
       <Typography typography="Noto3" sx={{ p: 3 }}>
         将来フルスタックに活躍できるエンジニアになる、という理想を実現するため転職を決意。
-        <br />
         ベンチャー企業へ転職し、自社サービス開発にて現在は主にフロントエンド領域を担当。
-        <br />
         スクラムにて、NextJS・MaterialUIを用いたモダンなWebシステム開発を経験。
-        <br />
         バックエンド・インフラ領域にも興味を持ち、今後は業務でも担当できるよう学習中。
-        <br />
+        <br /> <br />
         また業務外では、当ポートフォリオや学習内容発信のためのブログ、
-        <br />
         その他ToDoアプリなど積極的にアウトプットを実施し研鑽中。
       </Typography>
     </>
