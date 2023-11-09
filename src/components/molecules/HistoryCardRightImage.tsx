@@ -22,10 +22,10 @@ const HistoryCardRightImage = ({ image, description }: HistoryCardProps) => {
     >
       <Box
         sx={{
-          width: { xs: "100vw", md: "400px" },
-          height: { xs: "200px", md: "100%" },
+          width: "100%",
+          height: "200px",
           display: { xs: "flex", md: "none" },
-          borderRadius: { xs: 0, md: "10px" },
+          borderRadius: 0,
           overflow: "hidden",
           position: "relative",
         }}
@@ -39,7 +39,7 @@ const HistoryCardRightImage = ({ image, description }: HistoryCardProps) => {
       </Box>
       <Box
         sx={{
-          width: { xs: "100vw", md: "700px" },
+          width: { xs: "100%", md: "700px" },
           height: { xs: "350px", md: "100%" },
           display: "flex",
           flexDirection: "column",
@@ -52,10 +52,10 @@ const HistoryCardRightImage = ({ image, description }: HistoryCardProps) => {
       </Box>
       <Box
         sx={{
-          width: { xs: "100vw", md: "400px" },
-          height: { xs: "200px", md: "100%" },
+          width:  "400px" ,
+          height:  "100%" ,
           display: { xs: "none", md: "flex" },
-          borderRadius: { xs: 0, md: "10px" },
+          borderRadius: "10px" ,
           overflow: "hidden",
           position: "relative",
         }}

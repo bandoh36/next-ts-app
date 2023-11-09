@@ -22,7 +22,7 @@ const HistoryCardLeftImage = ({ image, description }: HistoryCardProps) => {
     >
       <Box
         sx={{
-          width: { xs: "100vw", md: "400px" },
+          width: { xs: "100%", md: "400px" },
           height: { xs: "200px", md: "100%" },
           borderRadius: { xs: 0, md: "10px" },
           overflow: "hidden",
@@ -38,7 +38,7 @@ const HistoryCardLeftImage = ({ image, description }: HistoryCardProps) => {
       </Box>
       <Box
         sx={{
-          width: { xs: "100vw", md: "700px" },
+          width: { xs: "100%", md: "700px" },
           height: { xs: "350px", md: "100%" },
           display: "flex",
           flexDirection: "column",
