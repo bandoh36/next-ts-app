@@ -23,7 +23,7 @@ export const PROFILE_CONTENT = {
     <>
       <Typography typography="Noto1">Akisute（あきすて）</Typography>
       <Typography typography="Noto2">
-        {getYears(BIRTHDAY, "birthday")}歳、社会人。
+        {getYears(BIRTHDAY, "birthday")}歳、社会人
         {getYears(WORKING_STARTDATE, "work")}年目
       </Typography>
       <Typography typography="Noto2">
