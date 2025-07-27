@@ -2,12 +2,6 @@
   "name": "next-ts-app",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "20.18.3"
-  },
-  "volta": {
-    "node": "20.18.3"
-  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
